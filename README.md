@@ -6,13 +6,21 @@
 ```
  $ make prepare
 ```
-#### spin up local blockchain, rpc node & web dev server
+####  setup dev env
 ```
  $ make dev
+```
+#### spin up local blockchain & rpc node
+```
+ $ make chain
 ```
 #### deploy default smart contract
 ```
  $ make deploy
+```
+#### spin up frontend
+```
+ $ make frontend
 ```
 #### send 100 local eth to dev address
 ```

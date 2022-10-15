@@ -1,5 +1,3 @@
-import { useState, useEffect } from "react"
-
 import Layout from "../components/Layout"
 
 import {
@@ -18,8 +16,7 @@ const { Counter } = CounterAddress
 
 
 const Home = () => {
-  const [mounted, setMounted] = useState(false)
-  useEffect(() => setMounted(true), [])
+
   const { isConnected } = useAccount()
 
   const {
@@ -29,7 +26,7 @@ const Home = () => {
   } = useContractRead({
     addressOrName: Counter,
     contractInterface: abi,
-    functionName: "get",
+    functionName: "count",
     watch: true,
   })
 

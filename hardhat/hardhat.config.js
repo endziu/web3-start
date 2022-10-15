@@ -43,7 +43,7 @@ module.exports = {
       chainId: 1337, // We set 1337 to make interacting with MetaMask simpler
       mining: {
         auto: false,
-        interval: [3000, 8000]
+        interval: [1000, 3000]
       }
     }
   }

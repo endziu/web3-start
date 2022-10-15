@@ -16,28 +16,26 @@ prepare:
 	@cd hardhat && npm install;
 
 dev:
-	@echo "\n---> initializing dev end\n";
-	
+	@echo "\n---> initializing dev env\n";
 	@tmux new -s "web3-starter" -d;
 	@tmux split-window -v;
 	@tmux split-window -h;
 
+chain:
 	@echo "\n---> initializing local blockchain\n"
-
 	@tmux send-keys -t web3-starter.0 "cd hardhat && npx hardhat node" ENTER;
 	@sleep 3;
 	@echo "done!"
 
-	@echo "\n---> initializing frontend\n"
+deploy:
+	@echo "\n---> deploying smart contract\n";	
+	@cd hardhat && npx hardhat run scripts/deploy.js --network localhost;
 
+frontend:
+	@echo "\n---> initializing frontend\n"
 	@tmux send-keys -t web3-starter.1 "cd nextjs && npm run dev" ENTER;
 	@sleep 1;
 	@echo "done!"
-
-deploy:
-	@echo "\n---> deploying smart contract\n";
-	
-	@cd hardhat && npx hardhat run scripts/deploy.js --network localhost;
 
 faucet:
 	@echo "\n---> sending 100 ETH to $(DEV_ADDRESS)\n";
