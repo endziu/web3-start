@@ -1,6 +1,9 @@
-#### set env variable with your eth dev address
+* requires nodejs 18 & tmux
+
+#### set env variables
 ```
  $ export devAddress=0x1234...abcd
+ $ export ALCHEMY_KEY=YourAlchemyApiKey
 ```
 #### install dependencies
 ```
@@ -14,7 +17,7 @@
 ```
  $ make chain
 ```
-#### deploy default smart contract
+#### deploy smart contract
 ```
  $ make deploy
 ```
@@ -34,7 +37,7 @@
 ```
  $ make off
 ```
-#### project cleanup: node_modules & temp files
+#### project cleanup: remove node_modules & temp files
 ```
  $ make clean
 ```
