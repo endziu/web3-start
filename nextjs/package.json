@@ -1,0 +1,26 @@
+{
+  "name": "background-noises-dapp",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "post-update": "yarn upgrade --latest"
+  },
+  "dependencies": {
+    "@rainbow-me/rainbowkit": "^0.7.1",
+    "ethers": "^5.7.1",
+    "next": "^12.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "wagmi": "^0.6.8"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.2"
+  },
+  "license": "MIT",
+  "keywords": [],
+  "description": ""
+}

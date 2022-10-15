@@ -1,0 +1,15 @@
+.env
+.env*
+
+hardhat/node_modules/
+hardhat/.env
+hardhat/cache/
+hardhat/artifacts/
+
+nextjs/node_modules
+nextjs/.next/
+nextjs/out/
+nextjs/build/
+nextjs/.env*
+nextjs/.vercel/
+
