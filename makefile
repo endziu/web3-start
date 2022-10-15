@@ -55,4 +55,4 @@ clean:
 	@cd nextjs && rm -rf node_modules .next artifacts
 	@echo "done!"
 
-.PHONY: prepare dev deploy faucet attach off clean
+.PHONY: prepare dev chain deploy frontend faucet attach off clean
